@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Full Screen Photo Gallery</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <meta name="author" content="Tim Vervoort" />
+      <meta name="copyright" content="Tim Vervoort" />
+      <meta name="generator" content="Tim Vervoort" />
+      <link rel="dns-prefetch" href="https://code.jquery.com" />
+      <link rel="stylesheet" type="text/css" href="css/webcoderskull.css" />
+      <style type="text/css">
+          /* For demo only */
+          html, body {
+              margin: 0;
+              padding: 0;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+          }
+          .webcoderskull {
+              width: 25%;
+              height: auto;
+              float: left;
+          }
+      </style>
+    </head>
+    <body>
+
+        <!-- Create objects with class 'webcoderskull' and include the attribute 'data-full' with the relative or absolute path which is to be displayed. -->
+        <img class="webcoderskull" src="img/example1.jpg" alt="Example Image 1" data-full="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1701&w=2633" /><!-- Alt tags can be used to display info in the gallery viewer. -->
+        <img class="webcoderskull" src="img/example2.jpg" title="Example Image 2" data-full="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1701&w=2633" /><!-- The title tag can be used as well. -->
+        <img class="webcoderskull" src="img/example1.jpg" data-full="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1701&w=2633" />
+        <img class="webcoderskull" src="img/example2.jpg" data-full="https://images.pexels.com/photos/374710/pexels-photo-374710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1701&w=2633" />
+
+        <!-- Full screen gallery. -->
+        <div class="webcoderskull-view">
+            <h1></h1>
+            <img class="webcoderskull-prev webcoderskull-nav" src="img/prev.svg" alt="Previous picture" title="Previous picture" />
+            <img class="webcoderskull-next webcoderskull-nav" src="img/next.svg" alt="Next picture" title="Next picture" />
+            <img class="webcoderskull-close" src="img/close.svg" alt="Close gallery" title="Close gallery" />
+            <img class="webcoderskull-main" src="" alt="" />
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/webcoderskull.js"></script>
+
+        
+
+    </body>
+</html>
